@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/membership-apply"
+  to = "/.netlify/functions/membership-apply"
+  status = 200
+
+[[redirects]]
+  from = "/api/membership-members"
+  to = "/.netlify/functions/membership-members"
+  status = 200
